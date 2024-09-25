@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Weather App</title>
+	</head>
+	
+	<style>
+		body{
+			display: flex;
+			height: 100vh;
+			align-items: center;
+			justify-content: center;
+			background-image: url("https://cdn.pixabay.com/photo/2023/11/20/18/21/sunset-8401670_1280.jpg");
+			background-repeat: no-repeat;
+			background-position: center;
+		    background-size: cover;
+			flex-direction: column;
+			overflow-y: hidden;
+		}
+		
+		.container{
+			display: flex;
+		    flex-direction: column;
+		    padding: 10px;
+		    border-radius: 4%;
+		    height: 190px;
+		    align-items: center;
+		    justify-content: center;
+		}
+		
+		h1{
+			font-size: -webkit-xxx-large;
+		    color: white;
+		    font-style: normal;
+		    font-family: math;
+		}
+		
+		button{
+			width: 100px;
+		    display: block;
+		    margin: 10px 0px;
+			height: 35px;
+    		border-radius: 15px;
+    		cursor: pointer;
+		  color: #000;
+		  transition: all 0.3s ease;
+		  border: 1px solid #b3b3b3;
+		}
+		
+		button:hover {
+		  color: #fff;
+		  background-color: #fec400;
+		  border: 1px solid #fec400;
+		}
+		
+		form{
+			display: flex;
+    		flex-direction: column;
+    		align-items: center;
+		}
+		
+		input{
+			width: 100%;
+		  height: 2rem;
+		  outline: none;
+		  font-size: 1rem;
+		  color: #525050;
+		  padding: 0.2rem 0.5rem;
+		  border-radius: 1.5rem;
+		  border: 1px solid #b3b3b3;
+		}
+	</style>
+	
+	
+	<body>
+		<div class="container">
+			<h1>Weather App</h1>
+			<form action="MyServlet" method="post">
+				<input name="city" placeholder="Enter City Name"/>
+				<button>Submit</button>
+			</form>
+		</div>
+	</body>
+</html>
